@@ -3,12 +3,13 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Portfolio_MIKOUNGUI</title>
+    <title>Myckaëlle MIKOUNGUI — Portfolio BTS SIO SISR</title>
     <link rel="stylesheet" href="style.css">
-    <link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@300;400;600;800&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=DM+Serif+Display:ital@0;1&family=DM+Sans:opsz,wght@9..40,300;9..40,400;9..40,500;9..40,600&display=swap" rel="stylesheet">
 </head>
 <body>
 
+    <!-- ─── NAV ─── -->
     <nav>
         <div class="logo">Myckaëlle M.</div>
         <ul>
@@ -21,165 +22,212 @@
         </ul>
     </nav>
 
+    <!-- ─── HERO ─── -->
     <header>
-        <div class="hero-content">
-            <span class="badge">Myckaëlle MIKOUNGUI</span>
-            <h1>Étudiante en BTS SIO SISR</h1>
-            <p>Voici mon portfolio.</p>
+        <div class="hero-inner">
+            <span class="badge">BTS SIO · Option SISR</span>
+            <h1>Myckaëlle<br><em>MIKOUNGUI</em></h1>
+            <p class="hero-sub">Étudiante en systèmes, réseaux et infrastructure. Passionnée par la sécurité informatique.</p>
             <a href="#contact" class="btn-main">Me contacter</a>
         </div>
     </header>
 
     <main class="container">
-        
+
+        <hr class="section-divider">
+
+        <!-- ─── PARCOURS ─── -->
         <section id="parcours">
+            <p class="section-label">Formation</p>
             <h2 class="section-title">Mon Parcours</h2>
-            <div class="timeline-item">
-                <span class="date">2025 - 2027</span>
-                <h3>BTS SIO Option SISR</h3>
-                <p class="location">Lycée Parc de Vilgénis, Massy</p>
-                <p>Installation de systèmes et réseaux, configuration d’équipements, sécurisation des infrastructures, initiation à la cybersécurité.</p>
-            </div>
-            <div class="timeline-item">
-                <span class="date">2025</span>
-                <h3>BAC STMG</h3>
-                <p class="location">Lycée Geoffroy Saint-Hilaire, Etampes</p>
-                <p>Obtention du diplôme avec mention Très Bien.</p>
+
+            <div class="timeline">
+                <div class="timeline-item">
+                    <span class="tl-date">2025 – 2027</span>
+                    <div class="tl-body">
+                        <h3>BTS SIO — Option SISR</h3>
+                        <p class="tl-location">Lycée Parc de Vilgénis, Massy</p>
+                        <p>Installation de systèmes et réseaux, configuration d'équipements, sécurisation des infrastructures et initiation à la cybersécurité.</p>
+                    </div>
+                </div>
+                <div class="timeline-item">
+                    <span class="tl-date">2025</span>
+                    <div class="tl-body">
+                        <h3>BAC STMG</h3>
+                        <p class="tl-location">Lycée Geoffroy Saint-Hilaire, Étampes</p>
+                        <p>Obtention du diplôme avec mention Très Bien.</p>
+                    </div>
+                </div>
             </div>
         </section>
 
+        <hr class="section-divider">
+
+        <!-- ─── COMPÉTENCES ─── -->
         <section id="competences">
+            <p class="section-label">Savoir-faire</p>
             <h2 class="section-title">Compétences</h2>
-            <div class="competences-grille">
-                <div class="competence-carte">
-                    <h3>🌐 Réseaux</h3>
+
+            <div class="skills-grid">
+                <div class="skill-card">
+                    <div class="skill-icon">🌐</div>
+                    <h3>Réseaux</h3>
                     <div class="tags">
-                        <span class="tag">VLAN</span> <span class="tag">Routage</span> <span class="tag">Cisco</span>
+                        <span class="tag">VLAN</span>
+                        <span class="tag">Routage</span>
+                        <span class="tag">Cisco</span>
                     </div>
                 </div>
-                <div class="competence-carte">
-                    <h3>🖥️ Systèmes</h3>
+                <div class="skill-card">
+                    <div class="skill-icon">🖥️</div>
+                    <h3>Systèmes</h3>
                     <div class="tags">
-                        <span class="tag">Linux</span> <span class="tag">Windows Server</span> <span class="tag">AD</span>
+                        <span class="tag">Linux</span>
+                        <span class="tag">Windows Server</span>
+                        <span class="tag">Active Directory</span>
                     </div>
                 </div>
-                <div class="competence-carte">
-                    <h3>🔐 Sécurité</h3>
+                <div class="skill-card">
+                    <div class="skill-icon">🔐</div>
+                    <h3>Sécurité</h3>
                     <div class="tags">
-                        <span class="tag">VPN</span> <span class="tag">Pare-feu</span> <span class="tag">SSH</span>
+                        <span class="tag">VPN</span>
+                        <span class="tag">Pare-feu</span>
+                        <span class="tag">SSH</span>
                     </div>
                 </div>
-                <div class="competence-carte">
-                    <h3>⚙️ Outils</h3>
+                <div class="skill-card">
+                    <div class="skill-icon">⚙️</div>
+                    <h3>Outils</h3>
                     <div class="tags">
-                        <span class="tag">VirtualBox</span> <span class="tag">GNS3</span> <span class="tag">Docker</span>
+                        <span class="tag">VirtualBox</span>
+                        <span class="tag">GNS3</span>
+                        <span class="tag">Docker</span>
                     </div>
                 </div>
             </div>
         </section>
 
+        <hr class="section-divider">
+
+        <!-- ─── PROJETS ─── -->
         <section id="projets">
+            <p class="section-label">Réalisations</p>
             <h2 class="section-title">Projets</h2>
-            <div class="project-list">
+
+            <div class="projects">
                 <div class="project-card">
-                    <h3>Extension d'une architecture</h3>
-                    <p>Création d’une architecture de sous-réseau sécurisé conforme au système d’information.</p>
-                    <div class="project-tools">
-                        <span class="tool-dot">Routage</span>
-                        <span class="tool-dot">VirtualBox</span>
-                        <span class="tool-dot">GNS3</span>
-                        <span class="tool-dot">Documentation</span>
+                    <h3>Extension d'une architecture réseau</h3>
+                    <p>Création d'une architecture de sous-réseau sécurisé conforme au système d'information de l'entreprise.</p>
+                    <div class="tools">
+                        <span class="tool">Routage</span>
+                        <span class="tool">VirtualBox</span>
+                        <span class="tool">GNS3</span>
+                        <span class="tool">Documentation</span>
                     </div>
                 </div>
                 <div class="project-card">
                     <h3>TP Louvre</h3>
-                    <p>En groupe.</p>
-                    <div class="project-tools">
-                        <span class="tool-dot">Gestion de projet</span>
-                        <span class="tool-dot">Debian</span>
-                        <span class="tool-dot">AD + SMBD</span>
+                    <p>Projet réalisé en groupe : mise en place d'un environnement complet avec gestion des utilisateurs et des partages réseau.</p>
+                    <div class="tools">
+                        <span class="tool">Gestion de projet</span>
+                        <span class="tool">Debian</span>
+                        <span class="tool">AD + SMBD</span>
                     </div>
                 </div>
             </div>
         </section>
 
+        <hr class="section-divider">
+
+        <!-- ─── VEILLE TECH ─── -->
         <section id="veille">
-            <h2 class="section-title">Veille Technologique</h2>
-            <div class="card-large">
-                <div class="card-header">
-                    <span class="icon-box">🟣</span>
-                    <h3>Les objets connectés (IoT)</h3>
+            <p class="section-label">Veille Technologique</p>
+            <h2 class="section-title">Les objets connectés (IoT)</h2>
+
+            <div class="veille-card">
+                <h3>Enjeux de sécurité dans l'IoT en entreprise</h3>
+                <p>L'explosion des objets connectés en entreprise apporte une flexibilité majeure, mais transforme ces équipements en cibles privilégiées pour les cyberattaques en raison de leurs failles de sécurité natives. Face au risque de compromission globale du système d'information, la sécurisation et le cloisonnement de ces terminaux au sein de l'infrastructure réseau sont devenus des enjeux critiques.</p>
+            </div>
+
+            <div class="articles-grid">
+                <div class="article-card">
+                    <span class="article-source">SEIDOR</span>
+                    <h4>Défis et stratégies pour protéger l'IoT</h4>
+                    <p class="article-date">19 Février 2025</p>
+                    <a href="https://www.seidor.com/fr-lu/blog/securite-iot-defis-strategies" class="article-link" target="_blank">Lire l'article →</a>
                 </div>
-                <p>L'explosion des objets connectés (IoT) en entreprise apporte une flexibilité majeure, mais transforme ces équipements en cibles privilégiées pour les cyberattaques en raison de leurs failles de sécurité natives. Face au risque de compromission globale du système d'information, la sécurisation et le cloisonnement de ces terminaux au sein de l'infrastructure réseau sont devenus des enjeux critiques.</p>
+                <div class="article-card">
+                    <span class="article-source">LinkedIn</span>
+                    <h4>Sécurisation de l'IoT contre les menaces</h4>
+                    <p class="article-date">1 Mars 2024</p>
+                    <a href="https://www.linkedin.com/advice/3/how-can-you-secure-your-iot-network-from-common-vvdoc?lang=fr" class="article-link" target="_blank">Lire l'article →</a>
+                </div>
+                <div class="article-card">
+                    <span class="article-source">DIGI</span>
+                    <h4>Meilleures pratiques pour sécuriser l'IoT</h4>
+                    <p class="article-date">16 Juillet 2025</p>
+                    <a href="https://fr.digi.com/blog/post/iot-security" class="article-link" target="_blank">Lire l'article →</a>
+                </div>
             </div>
         </section>
 
-        <section id="actualites">
-            <div class="separateur"></div>
-            <h2 class="section-title">Actualités Récentes</h2>
-            <p class="sous-titre">Articles, rapports...</p>
+        <hr class="section-divider">
 
-            <div class="actualites-grille">
-                
-                <div class="actu-carte">
-                    <div class="actu-icone">📆</div>
-                    <h3>SEIDOR</h3>
-                    <p class="actu-date">19 Février 2025</p>
-                    <p>Défis et stratégies pour protéger l'IoT.</p>
-                    <a href="https://www.seidor.com/fr-lu/blog/securite-iot-defis-strategies" class="actu-lien">Lire l'article →</a>
-                </div>
-
-                <div class="actu-carte">
-                    <div class="actu-icone">📆</div>
-                    <h3>LinkedIn</h3>
-                    <p class="actu-date">1 Mars 2024</p>
-                    <p>Sécurisation de l'IoT contre les menaces.</p>
-                    <a href="https://www.linkedin.com/advice/3/how-can-you-secure-your-iot-network-from-common-vvdoc?lang=fr&originalSubdomain=fr" class="actu-lien">Lire l'article →</a>
-                </div>
-
-                <div class="actu-carte">
-                    <div class="actu-icone">📆</div>
-                    <h3>DIGI</h3>
-                    <p class="actu-date">16 Juillet 2025</p>
-                    <p>Meilleures pratiques pour sécuriser les dispositifs IoT.</p>
-                    <a href="https://fr.digi.com/blog/post/iot-security" class="actu-lien">Lire l'article →</a>
-                </div>
-
-            </div>
-        </section>
-
+        <!-- ─── STAGES ─── -->
         <section id="stages">
+            <p class="section-label">Expérience</p>
             <h2 class="section-title">Mes Stages</h2>
-            <div class="card-large">
-                <h3>Technicienne Réseau & Formatrice Excel <br> Mairie de Montgeron (91)</h3>
-                <span class="date">5 semaines • 2026</span>
-                <p>Support utilisateur, formation.</p>
-                <div class="project-tools">
-                    <span class="tool-dot">Formation</span>
-                    <span class="tool-dot">Réseau</span>
+
+            <div class="stages">
+                <div class="stage-card">
+                    <div class="stage-header">
+                        <h3>Technicienne Réseau &amp; Formatrice Excel<br>Mairie de Montgeron (91)</h3>
+                        <span class="stage-meta">5 semaines · 2026</span>
+                    </div>
+                    <p>Support utilisateur, formation bureautique et intervention sur l'infrastructure réseau.</p>
+                    <div class="tools">
+                        <span class="tool">Formation</span>
+                        <span class="tool">Réseau</span>
+                    </div>
                 </div>
-            </div>
-            <div class="card-large">
-                <h3>Assistante téléphonie<br> Radio France (75)</h3>
-                <span class="date">6 semaines • 2026</span>
-                <p>Gestion des postes de terminal des usagers.</p>
-                <div class="project-tools">
-                    <span class="tool-dot">Postes de travail</span>
-                    <span class="tool-dot">Hardware</span>
-                    <span class="tool-dot">Organisation</span>
+                <div class="stage-card">
+                    <div class="stage-header">
+                        <h3>Assistante Téléphonie<br>Radio France (75)</h3>
+                        <span class="stage-meta">6 semaines · 2026</span>
+                    </div>
+                    <p>Gestion des postes de terminal des usagers et intervention sur le matériel informatique.</p>
+                    <div class="tools">
+                        <span class="tool">Postes de travail</span>
+                        <span class="tool">Hardware</span>
+                        <span class="tool">Organisation</span>
+                    </div>
                 </div>
             </div>
         </section>
 
+        <hr class="section-divider">
+
+        <!-- ─── CONTACT ─── -->
         <section id="contact">
+            <p class="section-label">Contact</p>
             <h2 class="section-title">Me contacter</h2>
-            <div class="contact-boite">
-                <p>N'hésitez pas à me joindre pour plus d'informations !</p>
-                <div class="contact-liste">
-                    <a href="mailto:mikounguimyckaelle@gmail.com" class="lien-contact"><span>📧</span>mikounguimyckaelle@gmail.com</a>
-                    <a href="tel:+33769093831" class="lien-contact"><span>📞</span>Téléphone</a>
-                    <a href="https://www.linkedin.com/in/myckaëlle-mikoungui-9732a6173" class="lien-contact"><span>💼</span> LinkedIn</a>
-                    <a href="https://github.com/mikounguimyckaelle-dot" class="lien-contact"><span>🐙</span> GitHub</a>
+
+            <div class="contact-box">
+                <p>N'hésitez pas à me joindre pour toute opportunité ou question.</p>
+                <div class="contact-links">
+                    <a href="mailto:mikounguimyckaelle@gmail.com" class="contact-link">
+                        <span>📧</span> Email
+                    </a>
+                    <a href="tel:+33769093831" class="contact-link">
+                        <span>📞</span> Téléphone
+                    </a>
+                    <a href="https://www.linkedin.com/in/myckaëlle-mikoungui-9732a6173" class="contact-link" target="_blank">
+                        <span>💼</span> LinkedIn
+                    </a>
+                    <a href="https://github.com/mikounguimyckaelle-dot" class="contact-link" target="_blank">
+                        <span>🐙</span> GitHub
+                    </a>
                 </div>
             </div>
         </section>
@@ -187,7 +235,7 @@
     </main>
 
     <footer>
-        <p>© 2027 - Portfolio MIKOUNGUI</p>
+        <p>© 2027 — Myckaëlle MIKOUNGUI · Portfolio BTS SIO SISR</p>
     </footer>
 
 </body>
