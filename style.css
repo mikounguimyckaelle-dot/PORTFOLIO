@@ -144,6 +144,88 @@ h1 em {
     transform: translateY(-2px);
 }
 
+.hero-links {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 20px;
+    flex-wrap: wrap;
+}
+
+.btn-secondary {
+    display: inline-flex;
+    align-items: center;
+    gap: 6px;
+    color: var(--text-sub);
+    text-decoration: none;
+    font-weight: 500;
+    font-size: 0.9rem;
+    border-bottom: 1px solid var(--border);
+    padding-bottom: 2px;
+    transition: color 0.2s, border-color 0.2s;
+}
+
+.btn-secondary:hover {
+    color: var(--accent);
+    border-color: var(--accent);
+}
+
+/* ─── MODALE PDF ─── */
+.pdf-modal {
+    display: none;
+    position: fixed;
+    inset: 0;
+    background: rgba(24,24,27,0.7);
+    z-index: 1000;
+    align-items: center;
+    justify-content: center;
+    padding: 40px 20px;
+}
+
+.pdf-modal.open { display: flex; }
+
+.pdf-modal-content {
+    background: var(--white);
+    border-radius: var(--radius);
+    width: 100%;
+    max-width: 900px;
+    height: 90vh;
+    display: flex;
+    flex-direction: column;
+    overflow: hidden;
+}
+
+.pdf-modal-header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 16px 24px;
+    border-bottom: 1px solid var(--border);
+}
+
+.pdf-modal-header h3 {
+    font-size: 0.95rem;
+    font-weight: 600;
+}
+
+.pdf-modal-close {
+    background: none;
+    border: none;
+    font-size: 1.4rem;
+    line-height: 1;
+    color: var(--text-sub);
+    cursor: pointer;
+    padding: 4px 8px;
+}
+
+.pdf-modal-close:hover { color: var(--accent); }
+
+.pdf-modal iframe {
+    flex: 1;
+    width: 100%;
+    border: none;
+}
+
 /* ─── LAYOUT ─── */
 .container {
     max-width: 860px;
@@ -282,6 +364,24 @@ section { padding: 96px 0; }
     margin-bottom: 16px;
 }
 
+.report-link {
+    display: inline-flex;
+    align-items: center;
+    gap: 6px;
+    margin-top: 16px;
+    font-size: 0.85rem;
+    font-weight: 600;
+    color: var(--accent);
+    text-decoration: none;
+    background: none;
+    border: none;
+    cursor: pointer;
+    font-family: inherit;
+    padding: 0;
+}
+
+.report-link:hover { text-decoration: underline; }
+
 .tools { display: flex; flex-wrap: wrap; gap: 8px; }
 
 .tool {
@@ -327,19 +427,25 @@ section { padding: 96px 0; }
 }
 
 .articles-grid {
-    display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(240px, 1fr));
-    gap: 14px;
+    display: flex;
+    flex-direction: column;
+    gap: 16px;
 }
 
 .article-card {
     background: var(--white);
     border: 1px solid var(--border);
     border-radius: var(--radius);
-    padding: 22px;
+    padding: 28px 32px;
     display: flex;
     flex-direction: column;
-    gap: 8px;
+    gap: 10px;
+}
+
+.article-meta {
+    display: flex;
+    align-items: center;
+    gap: 12px;
 }
 
 .article-source {
@@ -348,26 +454,78 @@ section { padding: 96px 0; }
     letter-spacing: 0.08em;
     text-transform: uppercase;
     color: var(--accent);
+    background: var(--accent-soft);
+    padding: 4px 12px;
+    border-radius: 100px;
+}
+
+.article-date {
+    font-size: 0.8rem;
+    color: var(--text-light);
+    display: flex;
+    align-items: center;
+    gap: 6px;
 }
 
 .article-card h4 {
-    font-size: 0.92rem;
+    font-size: 1.05rem;
     font-weight: 600;
     line-height: 1.4;
     color: var(--text-main);
 }
 
-.article-date {
-    font-size: 0.78rem;
-    color: var(--text-light);
+.article-text {
+    color: var(--text-sub);
+    font-size: 0.92rem;
+    line-height: 1.7;
+}
+
+.article-points {
+    margin-top: 2px;
+}
+
+.article-points-label {
+    font-size: 0.85rem;
+    font-weight: 600;
+    color: var(--text-main);
+    margin-bottom: 8px;
+}
+
+.article-points ul {
+    list-style: none;
+    display: flex;
+    flex-direction: column;
+    gap: 6px;
+}
+
+.article-points li {
+    position: relative;
+    padding-left: 16px;
+    font-size: 0.88rem;
+    color: var(--text-sub);
+    line-height: 1.6;
+}
+
+.article-points li::before {
+    content: '';
+    position: absolute;
+    left: 0;
+    top: 9px;
+    width: 5px;
+    height: 5px;
+    border-radius: 50%;
+    background: var(--accent);
 }
 
 .article-link {
-    margin-top: 6px;
-    font-size: 0.82rem;
+    margin-top: 8px;
+    font-size: 0.85rem;
     font-weight: 600;
     color: var(--accent);
     text-decoration: none;
+    display: inline-flex;
+    align-items: center;
+    gap: 4px;
 }
 
 .article-link:hover { text-decoration: underline; }
